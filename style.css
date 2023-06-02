@@ -1,0 +1,608 @@
+:root {
+  --softRed: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --DarkDesaturatedCyanGraphicDesignText: hsl(167, 40%, 24%);
+  --DarkBluePhotographyText: hsl(198, 62%, 26%);
+  --DarkModerateCyanFooter: hsl(168, 34%, 41%);
+
+  --VeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+  --VeryDarkGrayishBlue: hsl(213, 9%, 39%);
+  --DarkGrayishBlue: hsl(232, 10%, 55%);
+  --GrayishBlue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+
+  --barlowBody: "Barlow", sans-serif;
+  --frauncesHeading: "Fraunces", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: var(--frauncesHeading);
+}
+
+header {
+  background: url(images/mobile/image-header.jpg) no-repeat;
+  background-size: cover;
+  padding: 3.5rem 2.4rem;
+  text-align: center;
+}
+
+.navBar {
+  margin-bottom: 8.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBarTwo {
+  display: none;
+}
+
+header h1 {
+  margin-bottom: 5.2rem;
+
+  font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: 6.25px;
+  text-transform: uppercase;
+  color: var(--White);
+}
+.downArrow {
+  margin-bottom: 13.7rem;
+}
+
+/********** Pop Up  *******/
+.popUpContainer {
+}
+
+.popUp {
+  visibility: hidden;
+  position: absolute;
+  top: 10.6rem;
+  right: 0;
+  left: 0;
+
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+
+  padding-top: 3.9rem;
+  padding-bottom: 3.9rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--White);
+}
+
+.show {
+  visibility: visible;
+}
+
+.popUp::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+
+  width: 0;
+  height: 0;
+
+  border-width: 1.2rem;
+  border-style: solid;
+  border-color: transparent white white transparent;
+}
+
+.popUp a {
+  margin-bottom: 3.2rem;
+
+  font-family: var(--barlowBody);
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: -0.14px;
+
+  text-decoration: none;
+  color: var(--DarkGrayishBlue);
+}
+
+.popUp button {
+  margin: 0 auto;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  width: 14rem;
+
+  font-family: var(--frauncesHeading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.11px;
+
+  background-color: var(--Yellow);
+  color: var(--VeryDarkDesaturatedBlue);
+
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2.8rem;
+  cursor: pointer;
+}
+
+/******* Second Section   ********/
+.eggBox {
+  background: url(./images/mobile/image-transform.jpg) no-repeat;
+  background-size: cover;
+  height: 31.2rem;
+}
+
+.foodText {
+  padding: 6.4rem 2.4rem;
+  text-align: center;
+}
+
+.foodText h1 {
+  margin-bottom: 2.4rem;
+
+  font-weight: 900;
+  font-size: 3.2rem;
+  letter-spacing: -0.23px;
+}
+
+.foodText p {
+  margin-bottom: 3.2rem;
+
+  font-family: var(--barlowBody);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 30px;
+  letter-spacing: -0.13px;
+
+  color: var(--DarkGrayishBlue);
+}
+
+.foodText a {
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  color: var(--VeryDarkDesaturatedBlue);
+  text-decoration: none;
+
+  position: relative;
+}
+
+.fadedUnderline {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 13.7rem;
+  height: 1rem;
+  opacity: 25%;
+
+  border-radius: 28px;
+
+  z-index: -1;
+}
+
+.pinkUnderline {
+  background-color: var(--softRed);
+}
+
+.yellowUnderline {
+  background-color: var(--Yellow);
+}
+
+.foodText a:hover .yellowUnderline,
+.foodText a:hover .pinkUnderline {
+  opacity: 100%;
+}
+
+.pinkDrink {
+  background: url(./images/mobile/image-stand-out.jpg) no-repeat;
+  background-size: cover;
+  height: 31.2rem;
+}
+
+.cherry {
+  background: url(./images/mobile/image-graphic-design.jpg) no-repeat;
+}
+.orange {
+  background: url(./images/mobile/image-photography.jpg) no-repeat;
+}
+
+.cherryOrangeSection {
+  background-size: cover;
+
+  padding: 39.8rem 2.4rem 5.9rem;
+  text-align: center;
+}
+
+.cherryOrangeSection h1 {
+  margin-bottom: 2.7rem;
+
+  font-weight: 900;
+  font-size: 2.8rem;
+  letter-spacing: -0.2px;
+}
+
+.cherryOrangeSection p {
+  font-family: var(--barlowBody);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 27px;
+  letter-spacing: -0.11px;
+}
+
+.testimonials {
+  padding: 6.4rem 2.4rem 8.6rem;
+}
+
+.testimonials h1 {
+  margin-bottom: 6.4rem;
+
+  font-weight: 900;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  text-align: center;
+  color: var(--DarkGrayishBlue);
+}
+
+.client {
+  margin-bottom: 6.4rem;
+  text-align: center;
+}
+
+.client img {
+  margin-bottom: 3.2rem;
+
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50px;
+}
+
+.client p {
+  margin-bottom: 3.2rem;
+
+  font-family: var(--barlowBody);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 32px;
+  letter-spacing: -0.13px;
+
+  color: var(--VeryDarkGrayishBlue);
+}
+
+.client h2 {
+  margin-bottom: 0.9rem;
+
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: -0.13px;
+
+  color: var(--VeryDarkDesaturatedBlue);
+}
+
+.client h3 {
+  font-family: var(--barlowBody);
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: -0.1px;
+
+  color: var(--GrayishBlue);
+}
+
+/****** Square Image ******/
+
+.squareImages {
+  height: 37.5rem;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.milk {
+  background: url(./images/mobile/image-gallery-milkbottles.jpg) no-repeat;
+}
+.orangeSquare {
+  background: url(./images/mobile/image-gallery-orange.jpg) no-repeat;
+}
+.cone {
+  background: url(./images/mobile/image-gallery-cone.jpg) no-repeat;
+}
+.sugar {
+  background: url(./images/mobile/image-gallery-sugar-cubes.jpg) no-repeat;
+}
+
+.squareImage {
+  background-size: cover;
+}
+
+/******** footer *******/
+footer {
+  padding: 6.4rem 3.9rem 8rem;
+
+  text-align: center;
+  background-color: #90d4c6;
+  color: var(--DarkDesaturatedCyanGraphicDesignText);
+}
+
+footer > img {
+  margin-bottom: 4rem;
+}
+
+.footerText {
+  margin-bottom: 8.8rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 5.7rem;
+}
+
+.footerText a {
+  text-decoration: none;
+  color: var(--DarkDesaturatedCyanGraphicDesignText);
+}
+
+.footerText a:hover {
+  color: #fff;
+}
+
+.logoFlex {
+  display: flex;
+  justify-content: center;
+  gap: 2.8rem;
+}
+
+/******* DESKTOP  ********/
+
+@media (min-width: 1400px) {
+  header {
+    background: url(images/desktop/image-header.jpg) no-repeat;
+    background-size: cover;
+    padding: 3.4rem 4.8rem;
+  }
+
+  .navBar {
+    display: none;
+  }
+
+  .navBarTwo {
+    margin-bottom: 10.5rem;
+    display: block;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .rightSideNav {
+    display: flex;
+    align-items: center;
+    gap: 4.7rem;
+  }
+
+  .rightSideNav a {
+    font-family: var(--barlowBody);
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: -0.13px;
+
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .rightSideNav button {
+    padding: 1.5rem 3rem;
+
+    border: none;
+    border-radius: 28px;
+
+    font-family: var(--frauncesHeading);
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: -0.13px;
+
+    text-transform: uppercase;
+    color: var(--VeryDarkDesaturatedBlue);
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .rightSideNav button:hover {
+    background-color: rgba(36, 48, 62, 0.25);
+    color: #fff;
+  }
+
+  header h1 {
+    margin-bottom: 9.7rem;
+
+    font-size: 5.6rem;
+    letter-spacing: 8.75px;
+  }
+
+  .downArrow {
+    margin-bottom: 33.2rem;
+  }
+
+  /******* Second Section   ********/
+  .secondSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 60rem);
+  }
+
+  .eggText {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .eggBox {
+    background: url(./images/desktop/image-transform.jpg) no-repeat;
+    background-size: cover;
+    height: unset;
+  }
+
+  .foodText {
+    padding: 15.8rem 11rem 15.7rem 16.5rem;
+    text-align: left;
+  }
+
+  .foodText h1 {
+    margin-bottom: 3.2rem;
+
+    font-size: 4rem;
+    letter-spacing: -0.29px;
+  }
+
+  .foodText p {
+    margin-bottom: 4rem;
+  }
+
+  .pinkDrink {
+    background: url(./images/desktop/image-stand-out.jpg) no-repeat;
+    background-size: cover;
+    height: unset;
+  }
+
+  /* 1. continue here */
+
+  .cherry {
+    background: url(./images/desktop/image-graphic-design.jpg) no-repeat;
+  }
+  .orange {
+    background: url(./images/desktop/image-photography.jpg) no-repeat;
+  }
+
+  .cherryOrangeSection {
+    background-size: cover;
+
+    padding: 39.8rem 19rem 5.9rem;
+  }
+
+  .cherryOrangeSection h1 {
+    margin-bottom: 2.7rem;
+
+    font-weight: 900;
+    font-size: 2.8rem;
+    letter-spacing: -0.2px;
+  }
+
+  .cherryOrangeSection p {
+    font-family: var(--barlowBody);
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 27px;
+    letter-spacing: -0.11px;
+  }
+
+  .testimonials {
+    padding: 16rem 16.5rem 16rem;
+  }
+
+  .testimonials h1 {
+    margin-bottom: 6.4rem;
+
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+  }
+
+  .clientContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .client {
+    margin-bottom: 6.4rem;
+    text-align: center;
+  }
+
+  .client img {
+    margin-bottom: 3.2rem;
+
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50px;
+  }
+
+  .client p {
+    margin-bottom: 3.2rem;
+
+    font-family: var(--barlowBody);
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 32px;
+    letter-spacing: -0.13px;
+
+    color: var(--VeryDarkGrayishBlue);
+  }
+
+  .client h2 {
+    margin-bottom: 0.9rem;
+
+    font-weight: 900;
+    font-size: 1.8rem;
+    letter-spacing: -0.13px;
+
+    color: var(--VeryDarkDesaturatedBlue);
+  }
+
+  .client h3 {
+    font-family: var(--barlowBody);
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: -0.1px;
+
+    color: var(--GrayishBlue);
+  }
+
+  /****** Square Image ******/
+
+  .squareImages {
+    height: 44.7rem;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .milk {
+    background: url(./images/desktop/image-gallery-milkbottles.jpg) no-repeat;
+  }
+  .orangeSquare {
+    background: url(./images/desktop/image-gallery-orange.jpg) no-repeat;
+  }
+  .cone {
+    background: url(./images/desktop/image-gallery-cone.jpg) no-repeat;
+  }
+  .sugar {
+    background: url(./images/desktop/image-gallery-sugarcubes.jpg) no-repeat;
+  }
+
+  .squareImage {
+    background-size: cover;
+  }
+}
